@@ -1,0 +1,23 @@
+.p1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color:white ;
+    background-color:#086f69;
+
+}
+.IMG1{
+    margin-top: 167px;
+    margin-left: 190px;
+    background-color: white;
+    width: 31%;
+}
+
+.che{
+    width: 150%;
+}
+
+#loginbtn{
+    font-size: 20px;
+    width: 200px;
+}

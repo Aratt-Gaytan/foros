@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foro de Discusión</title>
+</head>
+<body>
+    <h1>
+        Foro de dudas de estadía.
+    </h1>
+    <p>En este foro, tú o tu asesor podrán agregar temas de discusión sobre actividades del proceso de estadía que necesitas conocer de manera mas detallada a manera de blog, en los cuales podrás participar con dudas o aportaciones específicas. 
+    Para abrir un nuevo tema da clic en el botón "Añadir un nuevo tópico/tema de discusión aquí"   o consulta el listado de temas abiertos en la tabla y participa dando clic en el título del tema. </p>
+
+
+  <h2>Nuevo Tema de Discusión</h2>
+  <form action="/new_forum" method="post">
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="name" required><br><br>
+
+    <label for="instrucions">Mensaje:</label>
+    <textarea id="instrucions" name="instrucions" required></textarea><br><br>
+
+    <input type="submit" value="Crear Asunto">
+  </form>
+
+</body>
+</html>

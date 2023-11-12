@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Curso</title>
+</head>
+<body>
+  <h2>Registro de Curso</h2>
+  <form action="/registroCursos" method="post" >
+    <label for="name">Nombre del Curso:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <label for="file">Archivo del Curso:</label>
+    <input type="text" id="file" name="file" required><br><br>
+
+    <label for="teacher">Profesor:</label>
+    <input type="text" id="teacher" name="teacher" required><br><br>
+
+    <input type="submit" value="Registrar Curso">
+  </form>
+</body>
+</html>
