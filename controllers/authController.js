@@ -3,7 +3,7 @@ const { conexion, mysql } = require('../db/db.js');
 
 exports.login = (req, res) => {
   const { username, password } = req.body;
-  const comprobacion = `SELECT iduser, email, password FROM user WHERE email = '${email}' AND password = '${password}'`;
+  const comprobacion = `SELECT iduser, email, password FROM user WHERE registration_number = '${username}' AND password = '${password}'`;
   conexion.query(comprobacion, (error, results) => {
     if (error) {
       console.error('Error al ejecutar la consulta:', error);
