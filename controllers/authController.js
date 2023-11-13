@@ -2,7 +2,7 @@ const { query } = require('express');
 const { conexion, mysql } = require('../db/db.js');
 
 exports.login = (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
   const comprobacion = `SELECT iduser, email, password FROM user WHERE email = '${email}' AND password = '${password}'`;
   conexion.query(comprobacion, (error, results) => {
     if (error) {
